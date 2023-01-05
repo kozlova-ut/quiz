@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+    rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper-bundle.min.css" />
+  <script defer src="main.js"></script>
+
+  <style type="text/css">
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+  */
+
+    @font-face {
+      font-family: Adieu;
+      src: url(Adieu-Regular.otf);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      font-size: 100%;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Inter', 'Roboto', Arial, sans-serif;
+      color: #09544F;
+      /* background: #ffffff; */
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    .swiper-slide p {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    .white-text {
+      color: #ffffff!important;
+    }
+
+    section {
+      padding: 24px 16px 32px;
+    }
+
+    li {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    ol li {
+      margin-left: 19px;
+    }
+
+    ul li {
+      margin-left: 17px;
+    }
+
+    .unformatted-li {
+      margin-left: 0px;
+      list-style-position: inside;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    /* common styles for heading Adieu */
+
+    .heading {
+      font-family: 'Adieu', 'Roboto', Arial, sans-serif;
+      font-weight: bold;
+      color: #09544F;
+    }
+
+    /*headings ADIEU  */
+
+    /* main heading ADIEU (max 27 ) */
+    .heading-1 {
+      margin-bottom: 12px;
+      font-size: 35px;
+      line-height: 44px;
+    }
+
+    /* HEDING ADIEU MIDDLE (max 46 ) */
+    .heading-2 {
+      margin: 4px 0px 12px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    /* SMALL HEADING ADIEU (max 38 ) */
+    .heading-3 {
+      margin-bottom: 16px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    /* HEADINGS INTER */
+
+    .heading-small {
+      font-family: 'Inter', 'Roboto', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: bold;
+      color: #09544F;
+
+    }
+
+    .mt-4 {
+      margin-top: 4px;
+    }
+
+    .mt-8 {
+      margin-top: 8px;
+    }
+
+    .mt-12 {
+      margin-top: 12px;
+    }
+
+    .mt-16 {
+      margin-top: 16px;
+    }
+
+    .mt-24 {
+      margin-top: 24px;
+    }
+
+    .mb-8 {
+      margin-bottom: 8px;
+    }
+
+    .mb-4 {
+      margin-bottom: 4px;
+    }
+
+    .mb-12 {
+      margin-bottom: 12px;
+    }
+
+    .mr-16 {
+      margin-right: 16px;
+    }
+
+    .mr-8 {
+      margin-right: 8px;
+    }
+
+    .main {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 800px;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      background: #09544F;
+    }
+
+
+    .text-box p:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    .green {
+      padding: 20px;
+      background: #ECF7F6;
+      border-radius: 25px;
+    }
+
+    .swiper-wrapper {
+      height: 100vh;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      padding: 100px 16px 100px;
+      border: 1px solid #ffffff;
+    }
+
+    .link {
+      position: relative;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: bold;
+      color: #F04923;
+    }
+
+    .link::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: -15px;
+      width: 6px;
+      height: 6px;
+      border-bottom: 2px solid;
+      border-left: 2px solid;
+      transform: rotate(225deg);
+    }
+
+    .btn-box {
+      margin-top: 24px;
+    }
+
+    .last-button-box {
+      position: fixed;
+      z-index: 10;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 16px 16px 16px;
+    }
+
+    .ok-button {
+      display: block;
+      padding: 16px 20px 16px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 700;
+      text-align: center;
+      /* border: 2px solid #F04923; */
+      border-radius: 25px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .button-white {
+      color: #F04923;
+      background-color: #ffffff;
+    }
+
+    .button-orange {
+      color: #ffffff;
+      background-color: #f04923;
+    }
+
+    .block-small-img:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    .block-with-img,
+    .block-2-img,
+    .block-small-img {
+      display: flex;
+    }
+
+    .block-with-img p,
+    .block-with-img+.text-box p,
+    .block-2-img p,
+    .block-small-img p {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .img-88 {
+      max-width: 88px;
+      max-height: 88px;
+    }
+
+    .img-156 {
+      max-width: 156px;
+      max-height: 156px;
+    }
+
+    .img-56 {
+      max-width: 56px;
+      max-height: 56px;
+    }
+
+    .ok-button:hover {
+      opacity: .9;
+    }
+
+    .left-direction {
+      direction: ltr;
+      text-align: left;
+    }
+
+    .right-direction {
+      direction: rtl;
+      text-align: right;
+    }
+
+    .display_none {
+      display: none!important;
+    }
+
+    .push_close {
+      position: absolute;
+      right: 16px;
+      top: 32px;
+      z-index: 20;
+    }
+
+    .swiper-button {
+      height: 100%;
+      top: 0;
+      width: 30%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    .swiper-button:active,
+    .swiper-button:focus {
+      outline: none !important;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      content: none;
+    }
+
+    .swiper-button-next {
+      right: 0;
+    }
+
+    .swiper-button-prev {
+      left: 0;
+    }
+
+    .range {
+      position: relative;
+      -webkit-appearance: none;
+      margin-bottom: 32px;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(90deg, #1A8079 0%, #1FBBB2 100%);
+      box-shadow: inset 0px 2px 2px rgba(4, 70, 62, 0.5);
+      border-radius: 5px;
+      outline: none;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+
+    .gradient-1 {
+      background: linear-gradient(270deg, #FFE141 0%, #00FF56 27.98%, #FFE141 62.84%, #FF4141 100%);
+      box-shadow: inset 0px 2px 2px rgba(8, 57, 51, 0.4);
+    }
+
+    .gradient-2 {
+      background: linear-gradient(90deg, #FFE141 0%, #00FF56 19.27%, #FFE141 40.62%, #FF4141 100%);
+      box-shadow: inset 0px 2px 2px rgba(8, 57, 51, 0.4);
+    }
+
+    .gradient-3 {
+      background: linear-gradient(270deg, #FFE141 0%, #00FF56 27.36%, #FFE141 59.93%, #FF4141 100%);
+      box-shadow: inset 0px 2px 2px rgba(8, 57, 51, 0.4);
+    }
+
+    .gradient-4 {
+      background: linear-gradient(270deg, #FFE141 0%, #00FF56 27.36%, #FFE141 59.93%, #FF4141 100%);
+      box-shadow: inset 0px 2px 2px rgba(8, 57, 51, 0.4);
+    }
+
+    .gradient-5 {
+      background: linear-gradient(270deg, #FFE141 0%, #00FF56 27.36%, #FFE141 59.93%, #FF4141 100%);
+      box-shadow: inset 0px 2px 2px rgba(8, 57, 51, 0.4);
+    }
+
+    .range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; 
+        background: url('img/em-1.png') no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .range::-moz-range-thumb {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: url('img/em-1.png') no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .range-correct::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; 
+        background: url('img/em-correct.png') no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .range-correct::-moz-range-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; 
+        background: url('img/em-correct.png') no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .range-wrong::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; 
+        background: url('img/em-wrong.png') no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .range-wrong::-moz-range-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; 
+        background: url('img/em-wrong.png') no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .range-container {
+      position: relative;
+    }
+
+    .point-correct {
+      content: "";
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      position: absolute;
+      top: -4px;
+    }
+
+    .demo-box {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0px;
+    }
+
+    .demo {
+      display: inline-block;
+      width: 88px;
+      text-align: center;
+      font-family: 'Adieu', 'Roboto', Arial, sans-serif;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: bold;
+      color: #09544F;
+    }
+
+    .btn {
+      padding: 10px 30px;
+      background: #f04923;
+      border: 1px solid #f04923;
+      border-radius: 25px;
+      color: #ffffff;
+    }
+
+    .slide-1 {
+      padding: 100px 0px 0px;
+    }
+
+    .slide-1_content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slide-1_pic {
+      height: 50%;
+    }
+
+    .slide-1_bottom {
+      height: 50%;
+    }
+
+    .plate-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      padding: 32px 16px 42px;
+      background: linear-gradient(90deg, rgba(64, 193, 178, 0.35) 0%, rgba(0, 67, 59, 0) 61.08%);
+      border-top: 1.5px solid #44FAC3;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .slide_content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .white-plate {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 60vh;
+      padding: 40px 16px 16px;
+      background: #ffffff;
+      border-radius: 30px;
+      overflow: scroll;
+    }
+
+    .green-block {
+      margin: 20px 0px;
+      padding: 16px;
+      background: #ECF7F6;
+      border-radius: 20px;
+    }
+    
+    .inactive {
+      background: #F19D8A;
+      border: 2px solid #F19D8A;
+      pointer-events: none;
+    }
+
+    .answer {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .answer img {
+      width: 18px;
+      margin-right: 8px;
+    }
+
+    .flash::before {
+      content: "";
+      display: block;
+      width: 23px;
+      height: 80px;
+      background: #fff;
+      background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.5) 0%,
+          rgba(255, 255, 255, 0) 100%
+      );
+      opacity: 1;
+      left: -80px;
+      top: -15px;
+      z-index: 1;
+      transform: rotate(30deg);
+      position: absolute;
+      animation: movingFlash 8s ease-in-out 2s infinite;
+    }
+
+    @keyframes movingFlash {
+      0% {
+        left: -80px;
+        opacity: 1;
+      }
+
+      17% {
+        left: 110%;
+        opacity: 1;
+      }
+
+      18% {
+        left: 110%;
+        opacity: 0;
+      }
+
+      50% {
+        left: -80px;
+        opacity: 0;
+      }
+
+      51% {
+        left: -80px;
+        opacity: 1;
+      }
+
+      68% {
+        left: 110%;
+        opacity: 1;
+      }
+      
+      69% {
+        left: 110%;
+        opacity: 0;
+      }
+
+      100% {
+        left: -80px;
+        opacity: 0;
+      }
+    }
+
+    .share {
+      display: flex;
+    }
+
+    .share_item {
+      flex-grow: 1;
+      padding: 8px;
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .share_item img {
+      width: 56px;
+    }
+
+    .share_item span {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    @media screen and (max-height: 600px){
+    .heading-1 {
+      margin-bottom: 8px;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    .plate-1 {
+      padding: 20px 16px;
+    }
+
+    .white-plate {
+      padding: 20px 12px;
+    }
+
+    .btn-box {
+      margin-top: 16px;
+    }
+
+    .swiper p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .green-block {
+      margin: 16px 0px;
+    }
+
+    .demo-box {
+      padding: 10px 0px 20px;
+    }
+
+    .swiper-slide {
+      padding: 100px 10px 60px;
+    }
+
+    .slide-1 {
+      padding: 100px 0px 0px;
+    }
+      
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="push_close">
+      <a href="pushwoosh://close">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="-1" x2="27.3577" y2="-1" transform="matrix(-0.682319 0.731055 -0.682319 -0.731055 19.6666 0)"
+            stroke="#D9EEED" stroke-width="2" />
+          <line y1="-1" x2="27.3577" y2="-1" transform="matrix(-0.682319 -0.731055 0.682319 -0.731055 21 20)"
+            stroke="#D9EEED" stroke-width="2" />
+        </svg>
+      </a>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1">
+          <div class="slide-1_content">
+            <div class="slide-1_pic"></div>
+            <div class="slide-1_bottom">
+              <div class="plate-1">
+                <div>
+                  <h1 class="heading heading-1 white-text">
+                    Forex Fortune Teller
+                  </h1>
+                  <div class="text-box">
+                    <p class="white-text">
+                      How good are you at predicting a price? Take a chance to test your skills!
+                    </p>
+                  </div>
+                </div>
+                <div class="btn-box">
+                  <div class="ok-button button-orange button-next">
+                    Let’s play
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="slide_content">
+            <div class="white-plate">
+              <div class="text-box">
+                <p>
+                  The rules are simple.
+                </p>
+                <p>
+                  You’ll see the facts that significantly affected the prices of assets.
+                </p>
+              </div>
+              <div class="green-block">
+                <p>
+                  Drag the <span style="color:#FFB500">coin</span> slider from left to right to estimate the value. Try yourself here.
+                </p>
+              </div>
+              <div class="game">
+                <div class="demo-box">
+                  <div class="demo" id="demo-0"></div>
+                </div>
+                <div class="range-container">
+                  <input type="range" min="0" max="500" value="250" class="range" id="range-0">
+                </div>
+              </div>
+              <div class="btn-box">
+                <div id="btn-0" class="ok-button button-orange button-next">
+                  I’m ready
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide_content">
+            <div class="white-plate">
+              <div>
+                  <span>1/5</span>
+                  <h2 class="heading heading-2">ZOOM vs. ZM</h2>
+                  <div class="text-box">
+                    <p>
+                      In 2020, investors saw a persprective when many people switched to Zoom video conferences (ZM), but confused it with a Chinese Zoom Technologies (ZOOM) company.
+                    </p>
+                    <p>
+                      How much did the <b>ZOOM</b> price go up?
+                    </p>
+                  </div>
+                  <div class="game">
+                    <div class="demo-box">
+                      <div class="demo" id="demo-1"></div>
+                    </div>
+                    <div class="range-container">
+                      <input type="range" min="0" max="500" value="250" class="range" id="range-1">
+                    </div>
+                  </div>
+                  <div id="answer-1" class="answer display_none">
+                    <img src="img/pic.png" alt="pic" width="18">
+                    <p><b>Answer:</b> The price went up by 376%</p>
+                  </div>
+                </div>
+              <div class="btn-box">
+                <div id="btn-1" class="ok-button button-orange inactive">
+                  Take a guess
+                </div>
+                <div id="btn-next-1" class="ok-button button-orange button-next display_none">
+                  Next question
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide_content">
+            <div class="white-plate">
+              <div>
+                  <span>2/5</span>
+                  <h2 class="heading heading-2">Crude oil</h2>
+                  <div class="text-box">
+                    <p>
+                      Oil prices increased when the Evergreen container ship blocked the Suez Canal, preventing the delivery of food, fuel, etc. for 6 days.
+                    </p>
+                    <p>
+                      How much did the prices for crude oil go up?
+                    </p>
+                  </div>
+                  <div class="game">
+                    <div class="demo-box">
+                      <div class="demo" id="demo-2"></div>
+                    </div>
+                    <div class="range-container">
+                      <input type="range" min="1" max="10" value="5" class="range" id="range-2">
+                    </div>
+                  </div>
+                  <div id="answer-2" class="answer display_none">
+                    <img src="img/pic.png" alt="pic" width="18">
+                    <p><b>Answer:</b> The price went up by 3-4%.</p>
+                  </div>
+                </div>
+              <div class="btn-box">
+                <div id="btn-2" class="ok-button button-orange inactive">
+                  Take a guess
+                </div>
+                <div id="btn-next-2" class="ok-button button-orange button-next display_none">
+                  Next question
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide_content">
+            <div class="white-plate">
+              <div>
+                  <span>3/5</span>
+                  <h2 class="heading heading-2">Dogecoin</h2>
+                  <div class="text-box">
+                    <p>
+                      Elon Musk commented “Doge” on his tweet, and the price of Dogecoin, a meme cryptocurrency, skyrocketed in 30 minutes!
+                    </p>
+                    <p>
+                      Can you predict for how much?
+                    </p>
+                  </div>
+                  <div class="game">
+                    <div class="demo-box">
+                      <div class="demo" id="demo-3"></div>
+                    </div>
+                    <div class="range-container">
+                      <input type="range" min="1" max="100" value="50" class="range" id="range-3">
+                    </div>
+                  </div>
+                  <div id="answer-3" class="answer display_none">
+                    <img src="img/pic.png" alt="pic" width="18">
+                    <p><b>Answer:</b> The price increased by 76%.</p>
+                  </div>
+                </div>
+              <div class="btn-box">
+                <div id="btn-3" class="ok-button button-orange inactive">
+                  Take a guess
+                </div>
+                <div id="btn-next-3" class="ok-button button-orange button-next display_none">
+                  Next question
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide_content">
+            <div class="white-plate">
+              <div>
+                  <span>4/5</span>
+                  <h2 class="heading heading-2">Gold</h2>
+                  <div class="text-box">
+                    <p>
+                      In August 2020, the gold price reached a record high amid rapidly rising inflation.
+                    </p>
+                    <p>
+                      How much did an ounce of gold cost?
+                    </p>
+                  </div>
+                  <div class="game">
+                    <div class="demo-box">
+                      <div class="demo" id="demo-4"></div>
+                    </div>
+                    <div class="range-container">
+                      <input type="range" min="1000" max="5000" value="3000" class="range" id="range-4">
+                    </div>
+                  </div>
+                  <div id="answer-4" class="answer display_none">
+                    <img src="img/pic.png" alt="pic" width="18">
+                    <p><b>Answer:</b> Gold reached a $2050/oz mark.</p>
+                  </div>
+                </div>
+              <div class="btn-box">
+                <div id="btn-4" class="ok-button button-orange inactive">
+                  Take a guess
+                </div>
+                <div id="btn-next-4" class="ok-button button-orange button-next display_none">
+                  Next question
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide_content">
+            <div class="white-plate">
+              <div>
+                  <span>5 /5</span>
+                  <h2 class="heading heading-2">Swiss Franc</h2>
+                  <div class="text-box">
+                    <p>
+                      The CHF soared when the Swiss National Bank removed its three-year cap on the value. 
+                    </p>
+                    <p>
+                      How much did the price jump?
+                    </p>
+                  </div>
+                  <div class="game">
+                    <div class="demo-box">
+                      <div class="demo" id="demo-5"></div>
+                    </div>
+                    <div class="range-container">
+                      <input type="range" min="10" max="50" value="25" class="range" id="range-5">
+                    </div>
+                  </div>
+                  <div id="answer-5" class="answer display_none">
+                    <img src="img/pic.png" alt="pic" width="18">
+                    <p><b>Answer:</b> The price went up by 30%.</p>
+                  </div>
+                </div>
+              <div class="btn-box">
+                <div id="btn-5" class="ok-button button-orange inactive">
+                  Take a guess
+                </div>
+                <div id="btn-next-5" class="ok-button button-orange button-next display_none see-result">
+                  See results
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide_content">
+            <div class="white-plate">
+              <div>
+                <div class="great-job display_none">
+                  <h2 class="heading heading-2">Great job!</h2>
+                  <div class="text-box">
+                    <p>
+                      Are you a Forex Nostradamus?
+                    </p>
+                    <p>
+                      What about your friends? Share this quiz and hurry up to apply skills in practice.
+                    </p>
+                  </div>
+                </div>
+                <div class="well-done display_none">
+                  <h2 class="heading heading-2">Well done!</h2>
+                  <div class="text-box">
+                    <p>
+                      You definitely know how to surf the market. 
+                    </p>
+                    <p>
+                      What about your friends? Share this quiz and 
+                    </p>
+                  </div>
+                </div>
+                <div class="thats-ok display_none">
+                  <h2 class="heading heading-2">That’s ok</h2>
+                  <div class="text-box">
+                    <p>
+                      No worries, you only need to practice your trading instincts. 
+                    </p>
+                    <p>
+                      Why not start practicing with us?
+                    </p>
+                  </div>
+                </div>
+                <div class="share">
+                  <div class="share_item">
+                    <img src="img/facebook.png" alt="facebook">
+                    <span>Facebook</span>
+                  </div>
+                  <div class="share_item">
+                    <img src="img/twitter.png" alt="twitter">
+                    <span>Twitter</span>
+                  </div>
+                  <div class="share_item">
+                    <img src="img/telegram.png" alt="telegram">
+                    <span>Telegram</span>
+                  </div>
+                  <div class="share_item">
+                    <img src="img/copy.png" alt="copy link">
+                    <span>Copy link</span>
+                  </div>
+  
+                </div>
+              </div>
+              <div class="btn-box">
+                <div class="ok-button button-orange">
+                  Trade now
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-button swiper-button-prev"></div>
+      <div class="swiper-button swiper-button-next"></div> -->
+    </div>
+
+
+
+
+
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   dynamicBullets: true,
+      // },
+      allowTouchMove: false,
+      allowSlidePrev: false,
+      navigation: {
+        nextEl: ".button-next",
+      },
+    });
+  </script>
+
+</body>
+
+</html>
